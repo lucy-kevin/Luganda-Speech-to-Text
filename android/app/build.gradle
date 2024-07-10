@@ -1,0 +1,87 @@
+// Add the necessary plugins for your Flutter project
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+// Load properties for your project
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+// Define Flutter version code and name from properties
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+// Configure Android project settings
+android {
+    // Set the package namespace
+    namespace "com.trancriber.lugandastt"
+    
+    // Specify SDK versions
+    compileSdk flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+    
+    // Configure Java and Kotlin compatibility
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    // Configure source directories
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    // Define default configuration for your app
+    defaultConfig {
+        // Specify application ID
+        applicationId "com.trancriber.lugandastt"
+        
+        // Set minSdkVersion and enable Multidex support
+        minSdkVersion 21
+        multiDexEnabled true
+        
+        // Set target SDK version
+        targetSdkVersion flutter.targetSdkVersion
+        
+        // Set version code and name
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    // Configure build types
+    buildTypes {
+        release {
+            // Configure signing for release builds (use debug signing for now)
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+// Define Flutter project source
+flutter {
+    source '../..'
+}
+
+// Add dependencies, including Multidex dependency
+dependencies {
+    // Multidex dependency for supporting multiple DEX files
+    implementation 'androidx.multidex:multidex:2.0.1'
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "546669813629",
+    "project_id": "fypsttfb",
+    "storage_bucket": "fypsttfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546669813629:android:70a928022f219a2978f614",
+        "android_client_info": {
+          "package_name": "com.example.fypstt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC932gRCsQ1gk5988j0CLcv1u5dXmQOyGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546669813629:android:ea2c7051ddeec3ac78f614",
+        "android_client_info": {
+          "package_name": "com.trancriber.lugandastt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC932gRCsQ1gk5988j0CLcv1u5dXmQOyGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
