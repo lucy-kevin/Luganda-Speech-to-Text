@@ -1,23 +1,69 @@
-# Luganda-Speech-to-Text
-## Inspiration
-The inspiration for developing the Luganda Speech-to-Text (STT) system came from the desire to bridge the communication gap faced by deaf students in Luganda-speaking communities. We recognized the need for a tool that could transcribe spoken Luganda into text, enabling these students to access educational content and participate fully in classroom activities.
+# Luganda Speech-to-Text App
 
-## What it does
-The Luganda STT application transcribes spoken Luganda into text in real-time, allowing users to save the transcriptions for future reference. 
-## How we built it
-We reviewed existing literature on speech-to-text systems to understand methodologies, challenges, and opportunities. Based on our findings, we designed a robust system architecture that includes a mobile application and an API.
-Using the Flutter framework and Dart language, we created a user-friendly mobile application. The app records audio, sends it to the API for transcription, and displays the transcribed text.
-We used Flask to develop the API, which interacts with the pre-trained Indonesian-nlp/wav2vec2-luganda model to process the audio data and return the transcriptions.
-We conducted comprehensive testing, including accuracy and usability tests, to ensure the system’s functionality and performance.
+## Overview
+The Luganda Speech-to-Text (STT) app is designed to transcribe spoken Luganda into text in real-time. This tool aims to bridge the communication gap faced by deaf students in Luganda-speaking communities by enabling them to access educational content and participate fully in classroom activities.
 
-## Challenges we ran into
-Ensuring seamless communication between the mobile application and the API required significant effort and hosting the API is quite costly. 
-## Accomplishments that we're proud of
-We successfully developed a working Luganda STT application that transcribes spoken Luganda into text.
-The application empowers deaf students by providing them with a tool that enhances their communication and access to educational content.
-Hosting the API on an AWS EC2 instance ensures that the system is scalable and reliable, capable of handling an increasing number of users.
-## What we learned
-We gained valuable experience in mobile application development using Flutter, API development with Flask, and integrating speech recognition models.
-The quality and diversity of training data are crucial for the accuracy of speech-to-text models.
-Designing user-friendly interfaces and conducting thorough testing are essential for creating tools that meet users’ needs effectively.
-## What's next for Luganda Speech to text 
+## Features
+- Real-time transcription of spoken Luganda to text
+- User account management
+- Storage of transcriptions for future reference
+
+## Technologies Used
+- **Framework**: Flutter
+- **Backend**: Firebase (for storage and user account management)
+- **Speech-to-Text Model**: Indonesian-nlp/wav2vec2-luganda
+
+## Getting Started
+
+### Prerequisites
+- Flutter SDK
+- Firebase account
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/lucy-kevin/Luganda-Speech-to-Text.git
+   cd Luganda-Speech-to-Text
+   ```
+
+2. **Set up Firebase:**
+   - Go to the [Firebase Console](https://console.firebase.google.com/).
+   - Create a new project.
+   - Add an Android/iOS app to your Firebase project and follow the instructions to download the `google-services.json` (for Android) or `GoogleService-Info.plist` (for iOS) file.
+   - Place the `google-services.json` file in the `android/app` directory or the `GoogleService-Info.plist` file in the `ios/Runner` directory.
+
+3. **Install dependencies:**
+   ```bash
+   flutter pub get
+   ```
+
+4. **Run the app:**
+   ```bash
+   flutter run
+   ```
+
+## Usage
+1. **Create an Account/Login:**
+   - Users need to create an account or log in to use the app.
+   - Firebase handles user authentication and account management.
+
+2. **Record and Transcribe:**
+   - Press the record button to start recording audio.
+   - The app sends the recorded audio to the API for transcription.
+   - The transcribed text is displayed on the screen in real-time.
+
+3. **Save Transcriptions:**
+   - Users can save transcriptions for future reference.
+   - Saved transcriptions are stored in Firebase.
+
+## Contributing
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for more information.
+
+
+## Contact
+For any questions or inquiries, please contact us at kayikayikevin7@gmail.com / aningashillah@gmail.com
+
+## Links
+- [The Luganda Speech-to-Text API](https://github.com/lucy-kevin/luganda-stt-api)
+- [The Luganda Speech-to-Text App](https://github.com/lucy-kevin/Luganda-Speech-to-Text)
