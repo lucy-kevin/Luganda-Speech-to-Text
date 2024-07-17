@@ -65,5 +65,5 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 For any questions or inquiries, please contact us at kayikayikevin7@gmail.com / shillahaninga@gmail.com
 
 ## Links
-- [The Luganda Speech-to-Text API](https://github.com/lucy-kevin/luganda-stt-api)
+- [The Luganda Speech-to-Text API](https://github.com/lucy-kevin/Luganda-Speech-To-Text-API)
 - [The Luganda Speech-to-Text App](https://github.com/lucy-kevin/Luganda-Speech-to-Text)
