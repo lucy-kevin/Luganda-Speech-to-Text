@@ -62,7 +62,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 
 ## Contact
-For any questions or inquiries, please contact us at kayikayikevin7@gmail.com / aningashillah@gmail.com
+For any questions or inquiries, please contact us at kayikayikevin7@gmail.com / shillahaninga@gmail.com
 
 ## Links
 - [The Luganda Speech-to-Text API](https://github.com/lucy-kevin/luganda-stt-api)
